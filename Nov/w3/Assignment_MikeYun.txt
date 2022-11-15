@@ -1,0 +1,14 @@
+// 1
+// Result: "coffee"
+
+// 2
+// Result: "true"
+
+// 3
+// Result: "fizz"
+
+// 4
+// Result: "fizzbuzzfizzbuzz"
+
+// 5
+// Result: "FALSE"

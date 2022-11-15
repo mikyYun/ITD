@@ -1,0 +1,49 @@
+1. write a for loop that prints all the numbers from 1 - 100
+```js
+// pseudo
+// for num = 1, increase num up to 100
+// print num  
+```
+2. write a for loop that prints the multiples of 3 up to 100
+```js
+  // pseudo
+  // for num = 1, increase num up to 100 by 1
+  //   print num * 3 
+```
+
+3. write a for loop to 100 that prints out:
+```
+fizz if its a multiple of 3
+buzz if its a multiple of 5
+fizzbuzz if its a multiple of 3 and 5
+```
+```js
+// num starts from 0
+// increase by 1 up to 1000
+  // make a variable string with empty string
+  // if num is divisible by 3 AND 5, string is "fizBuzz"
+  // else if num is divisible by 3, string is "fizz"
+  // else if num is divisible by 5, string is "buzz"
+  // print string
+```
+
+4. make a while loop that runs while temperature is below 21 degrees and increases the heat in the room
+```js
+// while temperature is less then 21
+  // increase temperature => turn on the heat
+```
+
+5. make a variable for book price make a variable for budget book price is 25$, budget is 85$. Use a while loop that can determine how many books you can buy
+```js
+// book price is 25
+// budget is 85
+// total count starts from 0
+// while budget is less than book price
+  // count ++
+  // budget - book price
+
+//// while book price * count is less than budget - book price
+  //// count ++
+// print count
+
+```
