@@ -92,8 +92,10 @@ fizzbuzz if its a multiple of 3 and 5
 
 4. make a while loop that runs while temperature is below 21 degrees and increases the heat in the room
 ```js
+// variable temperature = 20
 // while temperature is less then 21
-// increase temperature
+// increase temperature => turn on airconditioner 
+
 while (temperature < 21) {
   temperature ++;
 }
