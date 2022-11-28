@@ -51,7 +51,7 @@ alert("TEST");
 //   let facto = 1;
 //   for (let i = 1; i < 5; i ++) {
 //     facto *= i;
-//   } 
+//   }
 //   console.log(facto);
 // }
 // factorial();
@@ -68,48 +68,77 @@ alert("TEST");
 //   alert("water");
 // }
 
-/** Questions */
+/** Questions _ Tue */
 // 1
-const beverage = "coffee";
-if (beverage === "coffee") {
-  console.log("COFFEE")
-} else if (beverage === "tea") {
-  console.log("TEA")
-} else {
-  console.log("WATER")
-}
+// const beverage = "coffee";
+// if (beverage === "coffee") {
+//   console.log("COFFEE")
+// } else if (beverage === "tea") {
+//   console.log("TEA")
+// } else {
+//   console.log("WATER")
+// }
 
-// 2
-let x2 = 8;
-let y2 = 9;
-if (x2 === 4 + 5 || x2 + y2 === 17) {
-  console.log("TRUE")
-} else {
-  console.log("ERROR")
-}
+// // 2
+// let x2 = 8;
+// let y2 = 9;
+// if (x2 === 4 + 5 || x2 + y2 === 17) {
+//   console.log("TRUE")
+// } else {
+//   console.log("ERROR")
+// }
 
-// 3
-let x3 = 12;
-if (x3 % 3 && x3 % 5) {
-  console.log("fizzbuzz")
-} else if (x3 % 3) {
-  console.log("fizz")
-} else if (x3 % 5) {
-  console.log("buzz")
-}
+// // 3
+// let x3 = 12;
+// if (x3 % 3 && x3 % 5) {
+//   console.log("fizzbuzz")
+// } else if (x3 % 3) {
+//   console.log("fizz")
+// } else if (x3 % 5) {
+//   console.log("buzz")
+// }
 
-// 4
-let x4 = 15;
-if (x4 % 3 && x4 % 5) {
-  console.log("fizzbuzz")
-} else if (x4 % 3) {
-  console.log("fizz")
-} else if (x4 % 5) {
-  console.log("buzz")
-}
+// // 4
+// let x4 = 15;
+// if (x4 % 3 && x4 % 5) {
+//   console.log("fizzbuzz")
+// } else if (x4 % 3) {
+//   console.log("fizz")
+// } else if (x4 % 5) {
+//   console.log("buzz")
+// }
 
-// 5
-let x5 = 500;
-if (x5 !== 2*250) {
-  console.log("TRUE")
-} else console.log("FALSE");
+// // 5
+// let x5 = 500;
+// if (x5 !== 2*250) {
+//   console.log("TRUE")
+// } else console.log("FALSE");
+
+/** Fri _ Nov 18 */
+// variable num = 10
+// variable factorialNum = 1
+// for x = 1 to num
+//    factorialNum = factorialNum * x
+// print factorialNum
+
+// WHILE
+// variable num = 10
+// variable factorialSum = 1
+// variable x = 1
+// if num <= 0 return;
+// while x < num
+//   factorialSum = factorialSum * x
+//   x ++
+// print factorialSum
+// function factorial(num) {
+//   if (num < 1) return;
+//   let total = 1;
+//   let x = 1;
+//   while (x < num) {
+//     total = total * x;
+//     x++;
+//   }
+//   return total;
+// }
+// console.log(factorial(10))
+
