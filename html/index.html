@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mike's Resume</title>
+    <script src="main.js" type="text/javascript" defer></script>
+  <body style="font-family: verdana; position: relative">
+    <header>
+      <!-- NAME -->
+      <h1>Mike Yun</h1>
+      <div>
+        <img
+          src="./enjoyCoding.gif"
+          alt="coding_gif"
+          style="width: 200px; position: absolute; right: 10px; top: 10px"
+        />
+      </div>
+      <!-- CONTACT -->
+      <ul>
+        <li><a href="mailto:myEmail@gmail.com">myEmail@gmail.com</a></li>
+      </ul>
+
+      <h3>Profile</h3>
+      <p>
+        <small>
+          <i>FullStack Web Developer with love for data visualization,
+            e-commerce, and metaverse
+          </i>
+          </small>
+      </p>
+    </header>
+    <main>
+      <!-- CORE SKILLS -->
+      <div>
+        <h3>Core Skills</h3>
+        <ul>
+          <li>
+            <strong>Language and Framework:</strong> JavaScript, NodeJS, React,
+            Express, Redux, MUI, TypeScript, Stripe, ThreeJS, SASS, Swift,
+            jQuery, Ajax, EJS, Bootstrap
+          </li>
+          <li>
+            <strong>Database:</strong> PostgreSQL, Graphql, SQLite, NoSQL,
+            MongoDB
+          </li>
+          <li><strong>Testing:</strong> Mocha, Jest, Storybook, Cypress</li>
+          <li>
+            <strong>OS and Tools:</strong> Jira, Git, Docker, Postman, AWS
+          </li>
+        </ul>
+      </div>
+
+      <!-- PROJECTS -->
+      <div>
+        <h3>Projects</h3>
+        <ul>
+          <li>
+            <p>
+              <a href="https://chatwithai.netlify.app/">
+                <b> ChatWithAI </b>
+              </a>
+              Nov 2022
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <th>This is a simple AI Chat service</th>
+                </tr>
+                <tr>
+                  <td>
+                    - Improved response accurancy from AI by passing past
+                    conversations when fetching
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    - Used Vite for the dev server start time faster with the
+                    provided feature, HMR API over ESM
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+          <li>
+            <p>
+              <a href="https://github.com/mikyYun/_redux">
+                <b> FineDust </b>
+              </a>
+              Oct 2022
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    A simple React webpage to show level of find dust in South
+                    Korea
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    - Fetched a public portal API to show selected city’s air
+                    forecast data to show cards so that user can add and remove
+                    cities
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    - Stored updated data in Redux store to understand redux
+                    flows so that easily communicate or update states Instead of
+                    passing props through multiple components
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </div>
+
+      <!-- EDUCATIONS -->
+      <div>
+        <h3>Educations</h3>
+        <ul>
+          <li>
+            <span>
+              <strong>IT General Programming Diploma</strong>, ITD COllege,
+              Vancouver, BC
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>FullStack Web Development Diploma</strong>, Lighthouse
+              Labs, Vancouver, BC
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ACTIVITIES -->
+      <div>
+        <h3>Activities</h3>
+        <ul>
+          <li>
+            <span> <strong>Challenges</strong> </span><br />
+            <span>
+              Personal daily challenges of reading tech related articles or
+              books, learning new technologies
+            </span>
+          </li>
+          <li>
+            <span> <strong>FrontEnd Challenge</strong> </span><br />
+            <span>
+              Weekly-based vanilla JavaScript projects to understand JS concepts
+              in an Agile system
+            </span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div class="submit">
+      <button id="button_submit" class="button_submit" onclick="submit()">
+        button-resume-submit
+      </button>
+      <input type="button" id="input_submit" class="input_submit" value="input-resume-submit" onclick="changeValue()" />
+    </div>
+  </body>
+</html>
