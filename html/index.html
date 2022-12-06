@@ -3,7 +3,7 @@
   <head>
     <title>Mike's Resume</title>
     <script src="main.js" type="text/javascript" defer></script>
-  <body style="font-family: verdana; position: relative">
+  <body style="font-family: verdana; position: relative; width: 90vw; margin: auto;">
     <header>
       <!-- NAME -->
       <h1>Mike Yun</h1>
@@ -19,6 +19,7 @@
         <li><a href="mailto:myEmail@gmail.com">myEmail@gmail.com</a></li>
       </ul>
 
+      <!-- PROFILE -->
       <h3>Profile</h3>
       <p>
         <small>
@@ -28,6 +29,9 @@
           </small>
       </p>
     </header>
+
+    <hr />
+
     <main>
       <!-- CORE SKILLS -->
       <div>
@@ -48,7 +52,7 @@
           </li>
         </ul>
       </div>
-
+      <hr />
       <!-- PROJECTS -->
       <div>
         <h3>Projects</h3>
@@ -58,27 +62,21 @@
               <a href="https://chatwithai.netlify.app/">
                 <b> ChatWithAI </b>
               </a>
-              Nov 2022
+              <span style="float: right;">
+                Nov 2022
+              </span>
             </p>
-            <table>
-              <tbody>
-                <tr>
-                  <th>This is a simple AI Chat service</th>
-                </tr>
-                <tr>
-                  <td>
-                    - Improved response accurancy from AI by passing past
-                    conversations when fetching
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    - Used Vite for the dev server start time faster with the
-                    provided feature, HMR API over ESM
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="about">
+              This is a simple AI Chat service
+            </div>
+            <ul>
+              <li>
+                Improved response accurancy from AI by passing past conversations when fetch data
+              </li>
+              <li>
+                Used Vite for the dev server start time faster with the provided feature, HMR API over ESM
+              </li>
+            </ul>
           </li>
 
           <li>
@@ -86,36 +84,25 @@
               <a href="https://github.com/mikyYun/_redux">
                 <b> FineDust </b>
               </a>
-              Oct 2022
+              <span style="float: right;">
+                Oct 2022
+              </span>
             </p>
-            <table>
-              <tbody>
-                <tr>
-                  <th>
-                    A simple React webpage to show level of find dust in South
-                    Korea
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    - Fetched a public portal API to show selected city’s air
-                    forecast data to show cards so that user can add and remove
-                    cities
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    - Stored updated data in Redux store to understand redux
-                    flows so that easily communicate or update states Instead of
-                    passing props through multiple components
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="about">
+              A simple React webpage to show level of find dust in South Korea
+            </div>
+            <ul>
+              <li>
+                Fetched a public portal API to show selected city’s air forecast data to show cards so that user can add and remove cities
+              </li>
+              <li>
+                Stored updated data in Redux store to understand redux flows so that easily communicate or update states Instead of passing props through multiple components
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
-
+      <hr />
       <!-- EDUCATIONS -->
       <div>
         <h3>Educations</h3>
@@ -134,7 +121,7 @@
           </li>
         </ul>
       </div>
-
+      <hr />
       <!-- ACTIVITIES -->
       <div>
         <h3>Activities</h3>
@@ -157,10 +144,12 @@
       </div>
     </main>
     <div class="submit">
-      <button id="button_submit" class="button_submit" onclick="submit()">
+      <button id="button_submit" class="button_submit" onclick="submit">
         button-resume-submit
       </button>
-      <input type="button" id="input_submit" class="input_submit" value="input-resume-submit" onclick="changeValue()" />
+      <span type="button" id="input_submit" class="input_submit">
+        Incomplete
+      </span>
     </div>
   </body>
 </html>
