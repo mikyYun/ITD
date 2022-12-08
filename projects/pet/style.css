@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  min-width: 500px;
+  background-color: #ffebeb;
+}
+
+/* HEADER */
+header div {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  height: 200px;
+  background-color: #c1f6ff;
+  line-height: 200px;
+}
+
+/* MAIN */
+main {
+  width: 90%;
+  margin: auto;
+}
+
+/* MAIN CONTROLLER */
+.controller {
+  width: 100%;
+  margin: auto;
+}
+
+/* MAIN CONTAINER */
+.pet_container {
+  height: 610px;
+  background-color: #c1f6ff;
+  width: 90%;
+  margin: auto;
+  /* padding-top: 20px; */
+  margin-top: 20px;
+}
+
+.pet_container .pet_header {
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 220px;
+}
+
+/* IMAGE CONTAINER */
+.pet_container .img_container {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.pet_container .img_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* INFO CONTAINER */
+.pet_container .info_container {
+  height: 200px;
+  display: grid;
+  place-items: center start;
+  grid-template-columns: auto auto;
+}
+.pet_container .info_container .info .title{
+  font-weight: bold;
+}
+
+/* DESCRIPTION */
+.pet_container .description {
+  border: 3px white solid;
+  border-radius: 10px;
+  width: calc(100% - 20px);
+  margin: auto;
+  height: 300px;
+  padding: 10px;
+}
+.pet_container .description p {
+  text-decoration: underline;
+}
