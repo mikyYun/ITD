@@ -15,23 +15,47 @@
     <main>
       <div class="controller">
         <select name="pet" id="pet">
-          <option value="Green">Green</option>
-          <option value="Yellow">Yellow</option>
+          <option value="Green">Yeondoo</option>
+          <option value="Yellow">Nabi</option>
         </select>
+        <div class="links_container">
+          <button class="goods">
+            <a
+              target="_blank"
+              href="https://www.yelp.ca/search?find_desc=Bird+Store&find_loc=Burnaby%2C+BC"
+              >buy goods</a
+            >
+          </button>
+          <!-- parent, self, and top are open browser in a same tab -->
+          <button class="book">
+            <a target="_parent" href="https://eranimalhospital.com/"
+              >book doctor</a
+            >
+          </button>
+          <button class="friends">
+            <a target="_top" href="https://www.petsmart.ca/bird/live-birds/"
+              >find more friends</a
+            >
+          </button>
+        </div>
       </div>
       <!-- PET CONTAINER -->
       <div class="pet_container">
         <div class="pet_header">
           <!-- IMAGE CONTAINER -->
           <div class="img_container">
-            <img src="./resources/images/green.jpg" alt="yeondoo" />
+            <img
+              src="./resources/images/yeondoo.jpg"
+              alt="yeondoo"
+              title="yeondoo"
+            />
           </div>
 
           <!-- INFO CONTAINER -->
           <div class="info_container">
             <div class="info">
               <span class="name_title title">Name: </span>
-              <span class="name"> Green</span>
+              <span class="name"> Yeondoo</span>
             </div>
             <div class="info">
               <span class="birthday_title title">Birthday: </span>
@@ -58,7 +82,12 @@
         <div class="description">
           <p class="about">About</p>
           <div class="detail">
-            The Budgerigar is a colourful parrot native to Australia. Its plumage is bright yellow and green, with a blue cheek and black scalloping on its wing feathers. Its tail is slender and dark blue. Small in size, they're roughly 18cm to 20cm from top to tail, and weigh 30 to 40 grams.
+            The
+            <span class="breed"> Budgerigar </span>
+            is a colourful parrot native to Australia. Its plumage is bright
+            yellow and green, with a blue cheek and black scalloping on its wing
+            feathers. Its tail is slender and dark blue. Small in size, they're
+            roughly 18cm to 20cm from top to tail, and weigh 30 to 40 grams.
           </div>
         </div>
       </div>
