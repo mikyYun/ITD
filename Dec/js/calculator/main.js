@@ -4,13 +4,14 @@ let operator;
 let initNumber = false;
 let endCalculate = false;
 
+// TO GET ELEMENTS OF HTML, script must be read after html loaded. I used <script..... defer>
+// OR YOU CAN PUT <script> tag at bottom of html
 // ELEMENTS
 const numberButtons = document.getElementsByClassName("number");
 const operatorButtons = document.getElementsByClassName("operator");
 const resultArea = document.getElementById("result");
 
 // METHODS
-
 /** INIT CALCULATOR */
 function clear() {
   number = 0;
@@ -65,7 +66,7 @@ function updateOperator(type) {
   if (type) {
     initNumber = true;
     endCalculate = false;
-    
+
     if (type === "plus") {
       operator = "+";
     } else if (type === "minus") {
@@ -80,7 +81,7 @@ function updateOperator(type) {
   }
 }
 
-// EVENTS
+// ADD EVENTS
 // UPDATE NUMBER EVENT
 for (let i = 0; i < numberButtons.length; i++) {
   numberButtons[i].addEventListener("click", updateNumber);
@@ -91,6 +92,7 @@ for (let i = 0; i < operatorButtons.length; i++) {
   const target = operatorButtons[i];
   const type = operatorButtons[i].getAttribute("class").split(" ")[1];
 
+  // switch is a method like IF~ELSE statement
   switch (type) {
     case "clear":
       target.addEventListener("click", clear);
