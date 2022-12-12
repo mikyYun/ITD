@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgba(29, 29, 29, 0.705);
+}
+
+
+html {
+  font-size: 16px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  border: 2px solid rgba(29, 29, 29, 0.705);;
+  opacity: 1;
+  transition: opacity .2s;
+}
+button:hover {
+  opacity: .9;
+}
+
+main #calculator {
+  width: 500px;
+  margin: auto;
+  background-color: rgba(29, 29, 29, 0.705);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* RESULT AREA */
+#calculator input {
+  width: 100%;
+  overflow: hidden;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* hide arrows from input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* -webkit-appearance: none; */
+  /* margin: 0; */
+  display: none;
+}
+
+#calculator .container {
+  display: flex;
+}
+
+
+#calculator .container .number_container {
+  flex: 3;
+  display: grid;
+  column-gap: 10px;
+  place-items: center center;
+  grid-template-columns: auto auto auto;
+}
+#calculator .container .number_container button {
+  width: 100%;
+}
+
+#calculator .container .number_container .clear {
+  background-color: rgb(255, 146, 146);
+  
+}
+#calculator .container .number_container .equal {
+  background-color: rgba(29, 29, 29, 0.705);
+  color: rgb(224, 224, 224);
+}
+#calculator .container .operator_container {
+  flex: 1;
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#calculator .container .operator_container .plus{
+  background-color: rgb(146, 255, 146);
+}
+#calculator .container .operator_container .minus{
+  background-color: rgb(255, 146, 146);
+}
+#calculator .container .operator_container .multiply{
+  background-color: rgb(146, 157, 255);
+}
+#calculator .container .operator_container .divide{
+  background-color: rgb(255, 239, 146);
+}
