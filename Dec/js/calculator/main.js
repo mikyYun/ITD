@@ -44,7 +44,7 @@ function getResult() {
     if (type === "plus") {
       total += Number(displayNumber);
     }
-    if (type === "minus") {
+    if (type === "subtract") {
       total -= Number(displayNumber);
     }
     if (type === "multiply") {
