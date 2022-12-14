@@ -7,7 +7,6 @@
   color: rgba(29, 29, 29, 0.705);
 }
 
-
 html {
   font-size: 16px;
 }
@@ -54,12 +53,11 @@ input::-webkit-inner-spin-button {
   display: flex;
 }
 
-
 #calculator .container .number_container {
   flex: 3;
   display: grid;
   column-gap: 10px;
-  place-items: center center;
+  /* place-items: center center; */
   grid-template-columns: auto auto auto;
 }
 #calculator .container .number_container button {
@@ -67,8 +65,8 @@ input::-webkit-inner-spin-button {
 }
 
 #calculator .container .number_container .clear {
-  background-color: rgb(255, 146, 146);
-  
+  background-color: rgba(29, 29, 29, 0.705);
+  color: rgb(224, 224, 224);
 }
 #calculator .container .number_container .equal {
   background-color: rgba(29, 29, 29, 0.705);
@@ -93,4 +91,10 @@ input::-webkit-inner-spin-button {
 }
 #calculator .container .operator_container .divide{
   background-color: rgb(255, 239, 146);
+}
+#calculator .container .operator_container button.operator {
+  opacity: .7;
+}
+#calculator .container .operator_container button#selected {
+  opacity: 1;
 }

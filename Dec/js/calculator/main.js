@@ -1,4 +1,4 @@
-let number = 0;
+let displayNumber = 0;
 let total = 0;
 let operator;
 let initNumber = false;
@@ -14,7 +14,7 @@ const resultArea = document.getElementById("result");
 // METHODS
 /** INIT CALCULATOR */
 function clear() {
-  number = 0;
+  displayNumber = 0;
   total = 0;
   updateOperator();
   resultArea.value = total;
@@ -28,30 +28,30 @@ function updateNumber(e) {
     endCalculate = false;
   }
   if (initNumber) {
-    total += Number(number);
-    console.log(total, number, num);
-    number = 0;
+    total += Number(displayNumber);
+    displayNumber = 0;
     initNumber = false;
   }
 
-  number = (number === 0) ? num : number + num;
-  resultArea.value = Number(number);
+  displayNumber = (displayNumber === 0) ? num : displayNumber + num;
+  resultArea.value = displayNumber;
 }
 
 // equal button clicked
 function getResult() {
   if (operator) {
-    if (operator === "+") {
-      total += Number(number);
+    const type = operator.getAttribute("class").split(" ")[1];
+    if (type === "plus") {
+      total += Number(displayNumber);
     }
-    if (operator === "-") {
-      total -= Number(number);
+    if (type === "minus") {
+      total -= Number(displayNumber);
     }
-    if (operator === "*") {
-      total *= number;
+    if (type === "multiply") {
+      total *= displayNumber;
     }
-    if (operator === "/") {
-      total /= number;
+    if (type === "divide") {
+      total /= displayNumber;
     }
     number = 0;
     updateOperator();
@@ -62,21 +62,20 @@ function getResult() {
 }
 
 // operator button clicked
-function updateOperator(type) {
-  if (type) {
+function updateOperator(target) {
+  // if clicked button is operator
+  if (target) {
+    if (operator) {
+      operator.removeAttribute("id");
+    }
+    operator = target;
+    target.setAttribute("id", "selected");
     initNumber = true;
     endCalculate = false;
 
-    if (type === "plus") {
-      operator = "+";
-    } else if (type === "minus") {
-      operator = "-";
-    } else if (type === "multiply") {
-      operator = "*";
-    } else if (type === "divide") {
-      operator = "/";
-    }
+    // clicked button is operator but not for clculator(clear, equal)
   } else {
+    operator.removeAttribute("id");
     operator = undefined;
   }
 }
@@ -101,7 +100,7 @@ for (let i = 0; i < operatorButtons.length; i++) {
       target.addEventListener("click", getResult);
       break;
     default:
-      target.addEventListener("click", () => updateOperator(type));
+      target.addEventListener("click", () => updateOperator(target));
       break;
   }
 }
