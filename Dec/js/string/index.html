@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<getElementById lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse String</title>
+</head>
+<body>
+  <input id="input" type="text" value="type any strings" onclick="clearInputArea() ">
+  <button onclick="reverseString()">reverse</button>
+  <div id="reverse">
+    <p>Reversed String here: <span id="reversedString"></span></p>
+  </div>
+  <script>
+    const inputArea = document.getElementById("input")
+    const reversedStringArea = document.getElementById("reversedString")
+
+    function clearInputArea() {
+      inputArea.value = ""
+    }
+
+
+    function reverseString() {
+      const str = inputArea.value
+      const strLength = str.length
+      let reversedStr = "";
+      for (let i = 0; i < strLength; i ++) {
+        reversedStr = str[i] + reversedStr;
+      }
+      reversedStringArea.innerText = reversedStr;
+      clearInputArea();
+    }
+  </script>
+</body>
+</getElementById("input")
