@@ -22,15 +22,25 @@
 
 
     function reverseString() {
-      const str = inputArea.value
+      let str = inputArea.value
       const strLength = str.length
       let reversedStr = "";
-      for (let i = 0; i < strLength; i ++) {
-        reversedStr = str[i] + reversedStr;
-      }
+      // FOR LOOP
+      // for (let i = 0; i < strLength ; i ++) {
+      //   reversedStr = str[i] + reversedStr;
+      // }
+
+      // using methods..
+      reversedStr = str.split("").reverse().join("")
+      /** EXPLANATION
+       * split("") makes "STRING" to ["S", "T", "R", "I", "N", "G"]
+       * reverse() makes ["S", "T", "R", "I", "N", "G"] to ["G", "N", "I", "R", "T", "S"]
+       * join("") makes "GNIRTS"
+      */
+
+
       reversedStringArea.innerText = reversedStr;
       clearInputArea();
     }
   </script>
 </body>
-</getElementById("input")
